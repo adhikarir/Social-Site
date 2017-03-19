@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 29, 2016 at 07:38 AM
+-- Generation Time: Mar 19, 2017 at 09:13 AM
 -- Server version: 5.6.21
 -- PHP Version: 5.6.3
 
@@ -30,7 +30,7 @@ CREATE TABLE IF NOT EXISTS `friend_requests` (
 `id` int(11) NOT NULL,
   `user_from` varchar(255) NOT NULL,
   `user_to` varchar(255) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=40 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=41 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `friend_requests`
@@ -52,7 +52,8 @@ INSERT INTO `friend_requests` (`id`, `user_from`, `user_to`) VALUES
 (36, 'qqqqq', 'ram'),
 (37, 'qqqqq', 'ram'),
 (38, 'qqqqq', 'ram'),
-(39, 'qqqqq', 'ram');
+(39, 'qqqqq', 'ram'),
+(40, 'adramesh', 'qqqqq');
 
 -- --------------------------------------------------------
 
@@ -108,7 +109,7 @@ CREATE TABLE IF NOT EXISTS `posts` (
   `date_added` datetime NOT NULL,
   `added_by` varchar(255) NOT NULL,
   `user_posted_to` varchar(255) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=160 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=236 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `posts`
@@ -226,7 +227,83 @@ INSERT INTO `posts` (`id`, `body`, `date_added`, `added_by`, `user_posted_to`) V
 (156, '', '2072-02-11 00:00:00', 'ram', 'qqqqq'),
 (157, 'qswertyt', '2072-02-11 00:00:00', 'qqqqq', 'qqqqq'),
 (158, 'swdaefrty', '2072-02-11 00:00:00', 'qqqqq', 'qqqqq'),
-(159, 'jnh', '2072-02-11 00:00:00', 'qqqqq', 'qqqqq');
+(159, 'jnh', '2072-02-11 00:00:00', 'qqqqq', 'qqqqq'),
+(160, '', '0000-00-00 00:00:00', 'ram', 'ram'),
+(161, '', '0000-00-00 00:00:00', 'ram', 'ram'),
+(162, 'hlb', '0000-00-00 00:00:00', 'ram', 'ram'),
+(163, 'hello', '0000-00-00 00:00:00', 'ram', 'ram'),
+(164, 'hello ram', '0000-00-00 00:00:00', 'ram', 'ram'),
+(165, 'hello ramesh', '0000-00-00 00:00:00', 'ram', 'ram'),
+(166, 'dfgyhjkl', '0000-00-00 00:00:00', 'ram', 'ram'),
+(167, 'hlo', '0000-00-00 00:00:00', 'ram', 'ram'),
+(168, 'good morning\r\n', '0000-00-00 00:00:00', 'ram', 'ram'),
+(169, 'ds', '2072-02-11 00:00:00', 'ram', 'ram'),
+(170, 'jn', '0000-00-00 00:00:00', 'ram', 'ram'),
+(171, 'njm,', '2072-02-11 00:00:00', 'ram', 'ram'),
+(172, 'sdfghj', '0000-00-00 00:00:00', 'ram', 'ram'),
+(173, 'hEKJA ascfjk\r\nkhdzxjv\r\nkxdjvn\r\nkjdxvn \r\nkjcbvn\r\njkcbn\r\nkjcbn', '0000-00-00 00:00:00', 'ram', 'ram'),
+(174, 'xdfcgvhbj', '0000-00-00 00:00:00', '11111', '11111'),
+(175, 'xdfgh', '0000-00-00 00:00:00', '11111', '11111'),
+(176, 'rttftgyhjk', '0000-00-00 00:00:00', 'ram', 'ram'),
+(177, 'jhsabc', '0000-00-00 00:00:00', 'ram', 'ram'),
+(178, 'ghjvchbj', '0000-00-00 00:00:00', 'ram', 'ram'),
+(179, 'tfgyhujkl', '0000-00-00 00:00:00', 'ram', 'ram'),
+(180, 'fdcggvbhnm', '0000-00-00 00:00:00', 'ram', 'qqqqq'),
+(181, 'erdfcgvhbj', '0000-00-00 00:00:00', 'qqqqq', 'qqqqq'),
+(182, 'sedfghjk', '0000-00-00 00:00:00', 'ram', 'ram'),
+(183, 'hello', '0000-00-00 00:00:00', 'ram', 'ram'),
+(184, 'dxfghjk', '0000-00-00 00:00:00', 'ram', 'ram'),
+(185, 'xdfcgvhbjnm', '0000-00-00 00:00:00', 'ram', 'ram'),
+(186, 'szdfvbj', '0000-00-00 00:00:00', 'ram', 'ram'),
+(187, 'hello', '0000-00-00 00:00:00', 'ram', 'ram'),
+(188, 'fghj', '0000-00-00 00:00:00', 'ram', 'ram'),
+(189, 'suddep k xa', '0000-00-00 00:00:00', 'qqqqq', 'qqqqq'),
+(190, 'ew\r\n', '0000-00-00 00:00:00', 'ram', 'ram'),
+(191, 'fd', '0000-00-00 00:00:00', 'ram', 'qqqqq'),
+(192, 'sdfgfhgjnm,', '0000-00-00 00:00:00', 'qqqqq', 'qqqqq'),
+(193, 'sxdfrgthyju', '0000-00-00 00:00:00', 'ram', 'adramesh'),
+(194, 'fcgvhbjkl', '0000-00-00 00:00:00', 'aaaaa', 'aaaaa'),
+(195, 'hjk', '0000-00-00 00:00:00', 'aaaaa', 'aaaaa'),
+(196, 'hjk', '0000-00-00 00:00:00', 'aaaaa', 'aaaaa'),
+(197, 'fvgbhjnmk', '0000-00-00 00:00:00', 'aaaaa', 'aaaaa'),
+(198, 'hello aaaaaaaaaaaa', '0000-00-00 00:00:00', 'aaaaa', 'aaaaa'),
+(199, 'hello aaaaaaaaaaaa', '0000-00-00 00:00:00', 'aaaaa', 'aaaaa'),
+(200, 'hello aaaaaaaaaaaa', '0000-00-00 00:00:00', 'aaaaa', 'aaaaa'),
+(201, 'hello aaaaaaaaaaaa', '0000-00-00 00:00:00', 'aaaaa', 'aaaaa'),
+(202, '', '0000-00-00 00:00:00', 'bbbbb', 'bbbbb'),
+(203, '', '0000-00-00 00:00:00', 'bbbbb', 'bbbbb'),
+(204, 'hello', '0000-00-00 00:00:00', 'bbbbb', 'bbbbb'),
+(205, 'hello', '0000-00-00 00:00:00', 'bbbbb', 'bbbbb'),
+(206, 'dxfgckjml', '0000-00-00 00:00:00', 'bbbbb', 'bbbbb'),
+(207, 'dxfgckjml', '0000-00-00 00:00:00', 'bbbbb', 'bbbbb'),
+(208, 'xdgfchjk', '0000-00-00 00:00:00', 'bbbbb', 'bbbbb'),
+(209, 'xdgfchjk', '0000-00-00 00:00:00', 'bbbbb', 'bbbbb'),
+(210, 'xdgfchjk', '0000-00-00 00:00:00', 'bbbbb', 'bbbbb'),
+(211, 'xdgfchjk', '0000-00-00 00:00:00', 'bbbbb', 'bbbbb'),
+(212, 'xdgfchjk', '0000-00-00 00:00:00', 'bbbbb', 'bbbbb'),
+(213, 'xdcfvgh', '0000-00-00 00:00:00', 'bbbbb', 'bbbbb'),
+(214, 'xdcfvgh', '0000-00-00 00:00:00', 'bbbbb', 'bbbbb'),
+(215, 'fcgvbhjkml', '0000-00-00 00:00:00', 'bbbbb', 'bbbbb'),
+(216, 'adsfvbd ', '0000-00-00 00:00:00', 'fffff', 'fffff'),
+(217, 'adsfvbd ', '0000-00-00 00:00:00', 'fffff', 'fffff'),
+(218, ' hbjhnkl;', '0000-00-00 00:00:00', 'fffff', 'fffff'),
+(219, 'fvhjkl', '0000-00-00 00:00:00', 'fffff', 'fffff'),
+(220, 'cvgbhjn', '0000-00-00 00:00:00', 'bbbbb', 'bbbbb'),
+(221, 'fcghvbjmk,m.', '0000-00-00 00:00:00', 'bbbbb', 'bbbbb'),
+(222, 'fcghvbjmk,m.', '0000-00-00 00:00:00', 'bbbbb', 'bbbbb'),
+(223, 'fcghvbjmk,m.', '0000-00-00 00:00:00', 'bbbbb', 'bbbbb'),
+(224, 'fcghvbjmk,m.', '0000-00-00 00:00:00', 'bbbbb', 'bbbbb'),
+(225, 'fcvgbhjnmk', '0000-00-00 00:00:00', 'bbbbb', 'bbbbb'),
+(226, 'fcvgbhjnmk', '0000-00-00 00:00:00', 'bbbbb', 'bbbbb'),
+(227, 'cfvgbhjnkm', '0000-00-00 00:00:00', 'bbbbb', 'bbbbb'),
+(228, '', '0000-00-00 00:00:00', 'bbbbb', 'bbbbb'),
+(229, 'xdcfgvbhnj', '0000-00-00 00:00:00', 'bbbbb', 'bbbbb'),
+(230, '', '0000-00-00 00:00:00', 'bbbbb', 'bbbbb'),
+(231, '', '0000-00-00 00:00:00', 'bbbbb', 'bbbbb'),
+(232, '', '0000-00-00 00:00:00', 'bbbbb', 'bbbbb'),
+(233, '', '0000-00-00 00:00:00', 'bbbbb', 'bbbbb'),
+(234, 'drtfghujkl', '0000-00-00 00:00:00', 'ram', 'ram'),
+(235, 'gvhjkm,', '0000-00-00 00:00:00', 'ram', 'ram');
 
 -- --------------------------------------------------------
 
@@ -241,14 +318,30 @@ CREATE TABLE IF NOT EXISTS `post_comments` (
   `posted_to` varchar(255) NOT NULL,
   `post_remove` tinyint(1) NOT NULL DEFAULT '0',
   `post_id` int(11) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `post_comments`
 --
 
 INSERT INTO `post_comments` (`id`, `post_body`, `posted_by`, `posted_to`, `post_remove`, `post_id`) VALUES
-(1, 'this is comment for you', 'asd', 'adfe', 0, 68);
+(1, 'this is comment for you', 'asd', 'adfe', 0, 68),
+(2, 'fghjk', 'ram', 'qqqqq', 0, 159),
+(3, 'edrftgyhuj', 'ram', 'qqqqq', 0, 159),
+(4, 'oii ramesh', 'ram', 'qqqqq', 0, 165),
+(5, 'oii ram', 'ram', 'qqqqq', 0, 164),
+(6, 'khatra xa la photo chai', 'qqqqq', 'qqqqq', 0, 165),
+(7, 'rfg', 'ram', 'qqqqq', 0, 167),
+(8, 'ftgyhuj', 'ram', 'qqqqq', 0, 166),
+(9, 'dfghj', 'ram', 'qqqqq', 0, 167),
+(10, 'hey', 'ram', 'qqqqq', 0, 167),
+(11, 'oii khatra xa ta', 'ram', 'qqqqq', 0, 179),
+(12, 'dfchgbhkm,', 'qqqqq', 'qqqqq', 0, 181),
+(13, 'khatra', 'ram', 'qqqqq', 0, 183),
+(14, 'trtgyjkl khatra', 'ram', 'qqqqq', 0, 187),
+(15, 'dfghjk', 'ram', 'qqqqq', 0, 191),
+(16, 'ettryukhkl;', 'ram', 'qqqqq', 0, 192),
+(17, 'vbnjm', 'ddddd', 'qqqqq', 0, 192);
 
 -- --------------------------------------------------------
 
@@ -265,7 +358,7 @@ CREATE TABLE IF NOT EXISTS `pvt_messages` (
   `date` date NOT NULL,
   `opened` varchar(255) NOT NULL,
   `deleted` varchar(255) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=85 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=109 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `pvt_messages`
@@ -277,48 +370,53 @@ INSERT INTO `pvt_messages` (`id`, `user_from`, `user_to`, `msg_title`, `msg_body
 (15, 'apsar', 's', 'hello s', 'i am fine what aout u', '2016-01-26', 'yes', 'no'),
 (16, 'ram', 's', 'kam bhayo ta', 'khai k bhayo bhanu k bhayena bhanu here pachi tha hunxa', '2016-01-26', 'yes', ''),
 (17, 's', 'ram', 'oii rame', 'k xa tero khaber', '2016-01-26', 'yes', 'yes'),
-(18, 's', 'apsar', 'office mai ho', 'kati bela aaune ghar', '2016-01-26', 'yes', 'no'),
-(19, 'apsar', 's', 'hello gdeyhucskjcnkj', 'kam nai garena bhanya', '2016-01-26', 'yes', 'no'),
-(45, 'qqqqq', 'ram', '', 'hjkdfghjk,', '2016-01-28', 'yes', 'no'),
-(46, 'qqqqq', 'ram', '', 'hello', '2016-01-28', 'yes', 'no'),
-(47, 'qqqqq', 'ram', '', 'hello', '2016-01-28', 'yes', 'yes'),
-(48, 'qqqqq', 'ram', '', 'hello', '2016-01-28', 'yes', 'yes'),
-(49, 'qqqqq', 'ram', '', 'hhey', '2016-01-28', 'yes', 'yes'),
-(50, 'qqqqq', 'ram', '', 'hhey', '2016-01-28', 'yes', 'yes'),
-(51, 'qqqqq', 'ram', '', 'fghjk', '2016-01-28', 'yes', 'yes'),
-(52, 'qqqqq', 'ram', '', 'fghjk', '2016-01-28', 'yes', 'no'),
-(53, 'qqqqq', 'ram', '', 'dfhghbjn', '2016-01-28', 'yes', 'no'),
-(54, 'qqqqq', 'ram', '', 'hello', '2016-01-28', 'yes', 'no'),
-(55, 'qqqqq', 'ram', '', 'hello', '2016-01-28', 'yes', 'no'),
-(56, 'qqqqq', 'ram', '', 'hello', '2016-01-28', 'yes', 'no'),
-(57, 'qqqqq', 'ram', '', 'fghjk', '2016-01-28', 'yes', 'no'),
-(58, 'qqqqq', 'ram', '', 'fghjk', '2016-01-28', 'yes', 'no'),
-(59, 'qqqqq', 'ram', '', 'fgjykhujlk', '2016-01-28', 'yes', 'no'),
-(60, 'qqqqq', 'ram', '', 'k xa hau', '2016-01-28', 'yes', 'no'),
 (61, 'qqqqq', 'ram', '', '', '2016-01-28', 'yes', 'no'),
 (62, 'qqqqq', 'ram', '', 'ani sanchai', '2016-01-28', 'yes', 'no'),
 (63, 'qqqqq', 'ram', '', 'ani sanchai', '2016-01-28', 'yes', 'no'),
-(64, 'qqqqq', 'ram', '', 'fgjhkjk', '2016-01-28', 'yes', 'no'),
-(65, 'qqqqq', 'ram', '', 'oii rame', '2016-01-28', 'yes', 'yes'),
-(66, 'ram', 'qqqqq', '', 'oii q', '2016-01-28', 'yes', 'no'),
-(67, 'ram', 'qqqqq', '', 'hello', '2016-01-28', 'yes', 'no'),
-(68, 'ram', 'qqqqq', '', 'hello', '2016-01-28', 'yes', 'no'),
-(69, 'ram', 'qqqqq', '', 'hello', '2016-01-28', 'yes', 'no'),
-(70, 'ram', 'qqqqq', '', 'hello', '2016-01-28', 'yes', 'no'),
-(71, 'ram', 'qqqqq', '', '', '2016-01-28', 'yes', 'no'),
-(72, 'ram', 'qqqqq', '', '', '2016-01-28', 'yes', 'no'),
-(73, 'ram', 'qqqqq', '', '', '2016-01-28', 'yes', 'no'),
-(74, 'ram', 'qqqqq', '', '', '2016-01-28', 'yes', 'no'),
-(75, 'ram', 'qqqqq', '', '', '2016-01-28', 'yes', 'no'),
-(76, 'ram', 'qqqqq', '', '', '2016-01-28', 'yes', 'no'),
-(77, 'ram', 'qqqqq', '', '', '2016-01-28', 'yes', 'no'),
-(78, 'ram', 'qqqqq', '', '', '2016-01-28', 'yes', 'no'),
 (79, 'ram', 'qqqqq', '', 'hello', '2016-01-28', 'yes', 'yes'),
 (80, 'ram', 'qqqqq', '', 'hello', '2016-01-28', 'yes', 'no'),
 (81, 'ram', 'qqqqq', '', 'bhayo ta??', '2016-01-28', 'yes', 'no'),
-(82, 'qqqqq', 'ram', '', 'fgyuhij', '2016-01-28', 'no', 'no'),
-(83, 'qqqqq', 'ram', '', 'cgvhbjk\r\n', '2016-01-28', 'no', 'no'),
-(84, 'ram', 'qqqqq', '', 'ftgyhujik', '2016-01-28', 'no', 'no');
+(82, 'qqqqq', 'ram', '', 'fgyuhij', '2016-01-28', 'yes', 'no'),
+(83, 'qqqqq', 'ram', '', 'cgvhbjk\r\n', '2016-01-28', 'yes', 'no'),
+(84, 'ram', 'qqqqq', '', 'ftgyhujik', '2016-01-28', 'yes', 'no'),
+(85, 'ram', 'qqqqq', '', 'yghjlkl', '2016-02-02', 'yes', 'no'),
+(86, 'qqqqq', 'adramesh', '', 'hello', '2016-02-03', 'yes', 'no'),
+(87, 'ram', 'qqqqq', '', 'hello qq', '2016-02-04', 'yes', 'no'),
+(88, 'ram', 'qqqqq', '', 'vbn', '2016-02-08', 'yes', 'no'),
+(89, 'ram', 'qqqqq', '', 'fgh', '2016-02-08', 'yes', 'no'),
+(90, 'ram', 'qqqqq', '', 's', '2016-02-08', 'yes', 'no'),
+(91, 'ram', 'qqqqq', '', 'hello', '2016-02-08', 'yes', 'no'),
+(92, 'ram', 'qqqqq', '', 'gvhj', '2016-02-08', 'yes', 'no'),
+(93, 'ram', 'qqqqq', '', 'nm', '2016-02-08', 'yes', 'no'),
+(94, 'ram', 'qqqqq', '', 'oii', '2016-02-08', 'yes', 'no'),
+(95, 'ram', 'qqqqq', '', 'scd', '2016-02-08', 'yes', 'no'),
+(96, 'qqqqq', 'ram', '', 'qs', '2016-02-08', 'yes', 'no'),
+(97, 'ram', 'qqqqq', '', 'fggvhjkl', '2016-02-09', 'yes', 'no'),
+(98, 'ram', 'qqqqq', '', 'hello dhari', '2016-02-09', 'yes', 'no'),
+(99, 'ram', 'qqqqq', '', 'df', '2016-02-11', 'yes', 'no'),
+(100, 'ram', 'qqqqq', '', 'xcfbn', '2016-02-13', 'yes', 'no'),
+(101, 'qqqqq', 'ram', '', 'oii rame', '2016-02-18', 'yes', 'no'),
+(102, 'ram', 'qqqqq', '', 'fhghjk', '2016-02-18', 'yes', 'no'),
+(103, 'ram', 'qqqqq', '', 'edw', '2016-02-24', 'yes', 'no'),
+(104, 'ram', 'qqqqq', '', 'ggdfghbjn', '2016-02-26', 'no', 'no'),
+(105, 'qqqqq', 'ram', '', 'asdfghj', '2016-02-26', 'no', 'no'),
+(106, 'ram', 'qqqqq', '', 'jktdnhyk', '2016-06-05', 'no', 'no'),
+(107, 'ram', 'qqqqq', '', 'hello', '2016-06-05', 'no', 'no'),
+(108, 'ram', 'qqqqq', '', 'frtfgyhui', '2016-06-12', 'no', 'no');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `test`
+--
+
+CREATE TABLE IF NOT EXISTS `test` (
+`id` int(11) NOT NULL,
+  `name` varchar(30) NOT NULL,
+  `child` varchar(50) NOT NULL,
+  `parent` varchar(50) NOT NULL,
+  `position` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -338,7 +436,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `profile_pic` varchar(255) NOT NULL,
   `friend_array` text NOT NULL,
   `closed` varchar(255) NOT NULL DEFAULT 'no'
-) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `users`
@@ -349,8 +447,10 @@ INSERT INTO `users` (`id`, `username`, `first_name`, `last_name`, `email`, `pass
 (16, 'hello', 'hello', 'hello', 'hello', '5d41402abc4b2a76b9719d911017c592', '2016-01-27', '', '', '', 'yes'),
 (17, 'new', 'new', 'new', 'new', 'e3b81d385ca4c26109dfbda28c563e2b', '2016-01-27', '', 'BmwvNSFcDiGynad/11039359_800367040052243_1498434125_n.jpg', '', 'yes'),
 (18, 'oi', 'asdfg', 'sdfgh', 'a@a.a', '67c762276bced09ee4df0ed537d164ea', '2016-01-27', '', '', '', 'no'),
-(19, 'qqqqq', 'qqqqq', 'qqqqq', 'qqqqq@q.q', '437599f1ea3514f8969f161a6606ce18', '2016-01-27', '', 'sqG4N3rtdmL2pkB/11041431_800367423385538_1447363441_n.jpg', 'ram,ram,ram,ram', 'no'),
-(20, 'ram', 'ram', 'ram', 'ram@r.c', '734379e382de4feb0dce07cb1061ef48', '2016-01-28', '', 'bCTEhqRr2SoHPLw/11015376_800366606718953_34014269_n.jpg', '', 'no');
+(19, 'qqqqq', 'qqqqq', 'qqqqq', 'qqqqq@q.q', '437599f1ea3514f8969f161a6606ce18', '2016-01-27', '', '37CrlvcJE45P6DM/Desert.jpg', 'ram,ram,ram,ram', 'no'),
+(20, 'ram', 'shyam', 'shyam', 'ram@r.c', '734379e382de4feb0dce07cb1061ef48', '2016-01-28', '', '7MaTHPc6sjNKBd3/10968142_800366626718951_1460713701_n.jpg', '', 'no'),
+(21, 'zzzzz', 'zzzzz', 'zzzzz', 'zzzzz@z.c', '95ebc3c7b3b9f1d2c40fec14415d3cb8', '2016-02-04', '', '', '', 'no'),
+(22, '11111', '11111', '11111', '11111@1.1', 'b0baee9d279d34fa1dfd71aadb908c3f', '2016-02-08', '', '', '', 'no');
 
 --
 -- Indexes for dumped tables
@@ -387,6 +487,12 @@ ALTER TABLE `pvt_messages`
  ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `test`
+--
+ALTER TABLE `test`
+ ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
@@ -400,7 +506,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `friend_requests`
 --
 ALTER TABLE `friend_requests`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=40;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=41;
 --
 -- AUTO_INCREMENT for table `pokes`
 --
@@ -410,22 +516,27 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=25;
 -- AUTO_INCREMENT for table `posts`
 --
 ALTER TABLE `posts`
-MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=160;
+MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=236;
 --
 -- AUTO_INCREMENT for table `post_comments`
 --
 ALTER TABLE `post_comments`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=18;
 --
 -- AUTO_INCREMENT for table `pvt_messages`
 --
 ALTER TABLE `pvt_messages`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=85;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=109;
+--
+-- AUTO_INCREMENT for table `test`
+--
+ALTER TABLE `test`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=21;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=23;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
